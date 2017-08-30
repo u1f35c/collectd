@@ -5084,7 +5084,7 @@ AC_SUBST([BUILD_WITH_LIBSENSORS_LIBS])
 # libsigrok {{{
 AC_SUBST([LIBSIGROK_CFLAGS])
 AC_SUBST([LIBSIGROK_LIBS])
-PKG_CHECK_MODULES([LIBSIGROK], [libsigrok < 0.4],
+PKG_CHECK_MODULES([LIBSIGROK], [libsigrok >= 0.4],
   [with_libsigrok="yes"],
   [with_libsigrok="no (pkg-config could not find libsigrok)"]
 )
